@@ -17,7 +17,7 @@ ReactDOM.render(
         <List title="微博热榜" url='https://tenapi.cn/resou/' dataPath="name" svg={weiboSvg} backgroundColor='#c16789'/>
       </Col>
       <Col className="gutter-row" span={8}>
-        <List title="V2EX热榜" url='/api/topics/hot.json' dataPath="query" svg={v2exSvg} backgroundColor='#4a5258' />
+        <List title="V2EX热榜" url='https://www.v2ex.com/api/topics/hot.json' dataPath="query" svg={v2exSvg} backgroundColor='#4a5258' /> 
       </Col>
     </Row>
   </React.Fragment>,
