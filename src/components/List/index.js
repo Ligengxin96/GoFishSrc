@@ -20,7 +20,7 @@ const NewsList = ({ title, url, dataPath, svg, backgroundColor }) => {
     }).finally(() => {
       setLoading(false);
     });
-  }, [url])
+  }, [url]);
 
   return (
     <Card 
