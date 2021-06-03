@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.16.1",
     "axios": "^0.21.1",
+    "http-proxy-middleware": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -37,6 +38,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/GoFish",
-  "proxy": "https://www.v2ex.com"
+  "homepage": "/GoFish"
 }
