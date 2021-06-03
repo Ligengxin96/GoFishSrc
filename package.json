@@ -38,5 +38,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/GoFish"
+  "homepage": "/GoFish",
+  "proxy": "https://www.v2ex.com"
 }
