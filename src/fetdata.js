@@ -10,8 +10,12 @@ const request = (options) => {
       params,
       timeout: 20000,
     }).then((response) => {
+      let v2ex = [];
       const { list = [] } = get(response, 'data', {});
-      resolve(list);
+      if (list.length === 0) {
+        v2ex = response.data;
+      }
+      resolve(list.concat(v2ex));
     }).catch((error) => {
       reject(error.message);
     });

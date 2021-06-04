@@ -25,6 +25,7 @@ const NewsList = ({ title, url, dataPath, svg, backgroundColor }) => {
   return (
     <Card 
       headStyle={{ background: backgroundColor }}
+      bodyStyle={{ height: '32rem' }}
       title={
         <div style={{ display: 'flex' }}>
           <img src={svg} style={{ width: '3rem', height: '3rem' }} alt="" />
