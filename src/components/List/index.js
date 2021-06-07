@@ -40,8 +40,8 @@ const NewsList = ({ title, url, dataPath, svg, backgroundColor }) => {
           <List.Item>
             {
               index < 3
-              ? <a href={item.url}><span style={{ color: '#f1403c' }}>[{index + 1}]</span> {item[dataPath]}</a>
-              : <a href={item.url}><span style={{ color: '#c2a469' }}>[{index + 1}]</span> {item[dataPath]}</a>
+              ? <a href={item.url}><span style={{ color: '#f1403c' }} target="_blank" >[{index + 1}]</span> {item[dataPath]}</a>
+              : <a href={item.url}><span style={{ color: '#c2a469' }} target="_blank" >[{index + 1}]</span> {item[dataPath]}</a>
             }
           </List.Item>
         )}
