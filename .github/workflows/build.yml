@@ -1,4 +1,4 @@
-name: Build CI
+name: Build & Deploy CI
 
 on:
   push:
@@ -14,6 +14,13 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v2
+    
+    - name: Deploy To Heroku
+      uses: akhileshns/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "go--fish"
+        heroku_email: "ligengxin96@gmail.com"
       
     - name: build
       run: npm install && npm run build

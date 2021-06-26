@@ -11,8 +11,6 @@ const NewsList = ({ title, url, dataPath, svg, backgroundColor }) => {
     setLoading(true);
     request({
       url,
-      params: {},
-      method: 'get' 
     }).then((response) => {
       setData(response);
     }).catch((error) => {
